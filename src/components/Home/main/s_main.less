@@ -1,0 +1,176 @@
+.clearFloat(){
+   zoom:1;
+   &:after{
+      display:table;
+      content:"";
+      clear:both;
+   }
+}
+@g:#505050;
+.s_swbg{
+   width: 100%;
+   height: 850px;
+   img{
+      width: 100%;
+      min-width: 1200px;
+      height: 850px;
+      display: inline-block;
+      background-size: cover;
+      background-repeat: no-repeat;
+   }
+}
+.s_headMenuBg{
+   width: 100%;
+   height: 72px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   // z-index: 10;
+   background: rgba(22, 31, 53, 0.7);
+   z-index: 50;
+   // .s_headCover{
+   //    width: 100%;
+   //    height: 72px;
+   //    position: absolute;
+   //    top: 0;
+   //    left: 0;
+   //    background: rgba(22, 31, 53, 0.7);
+   //    z-index: 50;
+   // }
+   >div{
+      width: 1200px;
+      height: 100%;
+      margin:0 auto;
+      >img{
+         width: 171px;
+         height: 54px;
+         float: left;
+         display: block;
+         margin-left: 8px;
+         margin-top: 9px;
+      }
+      .s_menu{
+         float: left;
+         margin-left: 70px;
+         margin-top: 22px;
+         font-size: 16px;
+         color: #fff;
+         >li{
+            margin-left: 78px;
+            float: left;
+            >div{
+               cursor: pointer;
+            }
+            >div:nth-child(2){
+               font-size: 12px;
+               color:#7aa8fe;
+               text-align: center;
+            }
+         }
+         >li:first-child{
+            margin-left: 0;
+         }
+         >li:last-child{
+            >div:nth-child(2){
+               margin-left: -4px;
+            }
+         }
+      }
+      .s_login{
+         float: right;
+         margin-right: 24px;
+         margin-top: 22px;
+         font-size: 16px;
+         color: #fff;
+         >span{
+            cursor: pointer;
+         }
+         >span:last-child{
+            color: #7aa8fe;
+         }
+      }
+   }
+}
+.s_mainCts{
+   width: 1200px;
+   margin: 0 auto;
+   .s_gameCenterBg{
+      width: 100%;
+      .clearFloat();
+      .s_gameCenterBg_gameCenter{
+         width: 782px;
+         float: left;
+      }
+      .s_gameCenterBg_BPL{
+         width: 402px;
+         float: right;
+      }
+   }
+   
+   .s_videoList{
+      margin-top: 18px;
+      .clearFloat();
+      >li{
+         float: left;
+         &:not(:last-child){
+            margin-right: 14px;
+         }
+         &:first-child{
+            margin-right: 15px;
+         }
+         &:nth-child(5){
+            margin-right: 15px;
+         }
+      }
+       
+   }
+}
+footer{
+   width: 100%;
+   margin-top: 45px;
+   border-top: 1px solid #aeaeae;
+   padding-bottom: 170px;
+   >div{
+      width: 1200px;
+      margin: 0 auto;
+      .clearFloat();
+      color: @g;
+      .s_footer_notice{
+         width: 350px;
+         margin-top: 16px;
+         line-height: 26px;
+         float: left;
+         >p:first-child{
+            font-size: 16px;
+            font-weight: bold;
+         }
+         >p:last-child{
+            margin-top: 24px;
+            font-size: 14px;
+         }
+      }
+      .s_footer_about{
+         margin-top: 64px;
+         margin-left: 64px;
+         font-size: 14px;
+         float: left;
+         line-height: 26px;
+      }
+   }
+   
+}
+.toTop{
+    // display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 50px;
+    right: 2%;
+    overflow: hidden;
+    z-index: 999;
+    width: 32px;
+    height: 32px;
+    border: none;
+    text-indent: 100%;
+    background: url(./img/arrow.png) no-repeat 0px 0px;
+
+}

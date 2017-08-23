@@ -1,0 +1,107 @@
+.s_guideBg{
+   margin-top: 26px;
+   .clearFloat();
+   >div{
+      width: 100%;
+      margin-top: 15px;
+      .clearFloat();
+      >div:nth-child(1){
+         width: 414px;
+         float: left;
+         >img{
+            width: 414px;
+            height: 139px;
+            display: block;
+            float: left;
+            cursor: pointer;
+            &:not(:last-child){
+               margin-bottom: 12px;
+            }
+         }
+      }
+      .s_guideBg_news{
+         width: 786px;
+         // height: 321px;
+         float: left;
+         .s_guideBg_news_nav{
+            .clearFloat();
+            width: 100%;
+            padding-left: 15px;
+            display: flex;
+            >li{
+               flex:1;
+               // width: 114px;
+               font-size: 16px;
+               color: @g;
+               float: left;
+               text-align: center;
+               position: relative;
+               border-bottom: 2px solid #aeaeae;
+               cursor: pointer;
+               //&:hover{
+               //   color: @b;
+               //   border-bottom: 3px solid #7aa8fe;
+               //}
+            }
+         }
+           .s_guideBg_news_nav li.s_guideBg_news_hover{
+             color: @b;
+           }
+
+           .bottom_wheit{
+             width: 0;
+             height: 3px;
+             background-color: #7aa8fe;
+             position: absolute;
+             bottom: -2px;
+             left: 0;
+             z-index: 10;
+             pointer-events: none;
+           }
+
+           @keyframes bounce-in {
+             from {
+               width: 0;
+             }
+
+             to {
+               width: 100%;
+             }
+           }
+
+           .bounce-in {
+             -webkit-animation-name: bounce-in;
+             animation-name: bounce-in;
+             -webkit-animation-duration: .6s;
+             animation-duration: .6s;
+             -webkit-animation-fill-mode: both;
+             animation-fill-mode: both;
+           }
+            // >li:last-child{
+            //    width: 315px;
+            //    height: 27px;
+            // }
+
+         // >div:nth-child(2){
+         //    width: 770px;
+         //    font-size: 24px;
+         //    color: #fff;
+         //    height: 38px;
+         //    background: #7aa8fe;
+         //    border-radius: 4px;
+         //    margin-left: 15px;
+         //    line-height: 38px;
+         //    text-align: center;
+         //    margin-top: 15px;
+         //    cursor: pointer;
+         // }
+         >div:nth-child(2){
+            // margin-top: 15px;
+            color: @g;
+            // margin-left: 10px;
+            height: 263px;
+            overflow: hidden;
+         }
+      }
+   }
+}

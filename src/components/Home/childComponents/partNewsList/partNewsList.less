@@ -1,0 +1,113 @@
+
+.s_partNewsListBg{
+   ul {
+      .clearFloat();
+      >li {
+         width: 100%;
+         float: left;
+         font-size: 16px;
+         // color: #fff;
+         display: block;
+         &:not(:first-child){
+            margin-top: 11px;
+         }
+         >span {
+            cursor: pointer;
+            float: left;
+            margin-left: 15px;
+         }
+         >span:first-child {
+            // color: @b;
+            display: block;
+            float: left;
+         }
+         >span:last-child {
+            // color: @b;
+            float: right;
+            display: block;
+            margin-right: 7px;
+         }
+         &:hover{
+            color: @b;
+         }
+         .s_sBanNewsImg {
+            width: 100%;
+            height: 118px;
+            background-image: url(./img/sBanNews2.png);
+            .bgimg();
+            >img {
+               width: 156px;
+               height: 92px;
+               display: block;
+               margin-top: 13px;
+               margin-left: 16px;
+               float: left;
+               cursor: pointer;
+            }
+            >div {
+               width: 230px;
+               float: left;
+               margin-top: 13px;
+               margin-left: 20px;
+               >p:first-child {
+                  color: #fdc603;
+                  font-size: 16px;
+                  .lDisapper(2);
+                  cursor: pointer;
+               }
+               >p:last-child {
+                  color: #fff;
+                  font-size: 12px;
+                  .lDisapper(2);
+                  line-height: 22px;
+                  margin-top: 8px;
+                  cursor: pointer;
+               }
+            }
+         }
+         .s_guideTop{
+            width: 770px;
+            font-size: 24px;
+            color: #fff;
+            height: 38px;
+            background: #7aa8fe;
+            border-radius: 4px;
+            margin-left: 15px;
+            line-height: 38px;
+            text-align: center;
+            margin-top: 15px;
+            cursor: pointer;
+         }
+         // >div:nth-child(2){
+         //    width: 770px;
+         //    font-size: 24px;
+         //    color: #fff;
+         //    height: 38px;
+         //    background: #7aa8fe;
+         //    border-radius: 4px;
+         //    margin-left: 15px;
+         //    line-height: 38px;
+         //    text-align: center;
+         //    margin-top: 15px;
+         //    cursor: pointer;
+         // }
+      }
+   }
+}
+
+.colorType{
+   color: @b;
+}
+.s_partNewsListBg_line{
+   width: 330px;
+   display: block;
+   .lhidden();
+   float: left;
+}
+.lineMiddle{
+   width: 330px;
+}
+.lineLong{
+   width: 600px;
+}
+

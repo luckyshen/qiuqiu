@@ -1,0 +1,74 @@
+.fbreak() {
+   word-break: break-all;
+   word-wrap: break-word;
+   text-align: justify;
+}
+
+.apostrophe() {
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+}
+
+.bgimg() {
+   background-size: cover;
+   display: block;
+   background-repeat: no-repeat;
+}
+
+.radio() {
+   outline: none;
+   -webkit-appearance: none;
+   -ms-appearance: none;
+   appearance: none;
+   background-size: cover;
+   display: block;
+   background-repeat: no-repeat;
+}
+
+.appear() {
+   appearance: none;
+}
+
+.lhidden() {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+}
+
+.lDisapper(@num) {
+   display: -webkit-box;
+   display: -ms-box;
+   display: box;
+   -webkit-line-clamp: @num;
+   -ms-line-clamp: @num;
+   line-clamp: @num;
+   -webkit-box-orient: vertical;
+   -ms-box-orient: vertical;
+   box-orient: vertical;
+   overflow: hidden;
+}
+
+.clearFloat(){
+   zoom:1;
+   &:after{
+      display:table;
+      content:"";
+      clear:both;
+   }
+}
+.border-1px(@color){
+  position : relative;
+  &:after{
+   display: block;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   border-top: 1px solid @color;
+   width: 100%;
+   content: '' ;
+  }
+}
+
+@b: #7aa8fe;
+@g:#505050;
